@@ -2,16 +2,14 @@ class Animations {
     constructor() {
         this.time = 0
         this.description = document.querySelector('.home-description')
-        this.listOfDescriptions = ['am a hard worker', 'learn quickly', 'want you to check out my LinkedIn', 'am a kind and friendly person', 'work well in a team', 'want to do a good job', 'am a creative problem solver']
+        this.listOfDescriptions = ['am a hard worker', 'learn quickly', 'want you to check out my LinkedIn', 'am a kind and friendly person', 'work well in a team', 'love to do a good job', 'am a creative problem solver']
         this.usedDescriptions = ['love cats', 'think analytically', 'have 11 flanel shirts']
     }
     async homeDescription() {
-        console.log(this.description.innerText)
         await new Promise(r => setTimeout(r, 3000));
         if (this.time == 3) {
             this.description.innerText = "am a Full Stack Web Developer"
             this.time = 0
-            console.log(this.time)
             this.homeDescription()
         }
         else {
@@ -21,9 +19,11 @@ class Animations {
             this.listOfDescriptions.splice(randomDescription, 1, this.usedDescriptions[0])
             this.usedDescriptions.shift()
             this.time++
-            console.log(this.time)
             this.homeDescription()
         }
+    }
+    descriptionAnimation() {
+
     }
 }
 

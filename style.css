@@ -50,7 +50,6 @@
     color: #FDFDFD;
     background-color: #2A2A2A;
     text-align: center;
-
 }
 
 .home-subtitle {
@@ -60,9 +59,51 @@
     background-color: #2A2A2A;
 }
 
+.home-description-container {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    background-color: #2A2A2A;
+}
+
 .home-description {
     font-size: 2.25rem;
     color: #FF475A;
     text-align: center;
     background-color: #2A2A2A;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s linear;
 }
+
+.home-description-container:hover .home-description {
+    width: 0;
+    left: 100%;
+}
+
+.hidden-description {
+    font-size: 2.25rem;
+    color: #FF475A;
+    text-align: center;
+    background-color: #2A2A2A;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s linear;
+}
+
+.home-description-container:hover .hidden-description {
+    width: 100%
+}
+
