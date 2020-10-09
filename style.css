@@ -36,7 +36,7 @@ body {
 
 @media only screen and (max-width: 950px) {
     .nav-bar-button {font-size: 2.05rem;}
-    .nav-bar-button:hover{font-size: 2.15rem;}
+    .nav-bar-button:hover {font-size: 2.15rem;}
 }
 
 .home-background {
@@ -64,8 +64,6 @@ body {
     height: 42px;
 }
 
-
-
 .home-description {
     font-size: 2.25rem;
     color: #FF475A;
@@ -79,50 +77,19 @@ body {
     height: 100%;
     overflow: hidden;
     white-space: nowrap;
+    transition: opacity .35s linear, width .5s linear, left .5s linear;
 }
 
-.description-transition {
-    transition: opacity .3s linear, width .5s linear, left .5s linear;
+.description-reset {
+    display: none;
+    transition: none;
 }
 
-.width0 {
+.description-fade {
     width: 0;
-}
-
-.opacity0 {
     opacity: 0;
 }
 
 .left100 {
     left: 100%
 }
-
-.display-none {
-    display: none;
-}
-
-/* .home-description-container:hover .home-description {
-    width: 0;
-    left: 100%;
-    opacity: 0;
-} */
-
-.home-hidden-left {
-    font-size: 2.25rem;
-    color: #FF475A;
-    text-align: center;
-    /* animations */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.home-description-container:hover .home-hidden-description {
-    width: 100%;
-    opacity: 1;
-}
-

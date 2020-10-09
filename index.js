@@ -8,7 +8,7 @@ class Animations {
         this.usedDescriptions = ['love cats', 'think analytically', 'have 11 flanel shirts']
     }
     async homeDescriptionText() {
-        await new Promise(r => setTimeout(r, 3000))
+        await new Promise(r => setTimeout(r, 3500))
         this.homeDescriptionAnimation()
         if (this.time == 3) {
             if (this.descriptionShown == 1) {
@@ -41,30 +41,22 @@ class Animations {
     }
     async homeDescriptionAnimation() {
         if (this.descriptionShown == 1) {
-            this.homeDescription1.classList.toggle('width0')
-            this.homeDescription1.classList.toggle('opacity0')
+            this.homeDescription1.classList.toggle('description-fade')
             this.homeDescription1.classList.toggle('left100')
-            this.homeDescription2.classList.toggle('width0')
-            this.homeDescription2.classList.toggle('opacity0')
+            this.homeDescription2.classList.toggle('description-fade')
             await new Promise(r => setTimeout(r, 500))
-            this.homeDescription1.classList.toggle('display-none')
-            this.homeDescription1.classList.toggle('description-transition')
+            this.homeDescription1.classList.toggle('description-reset')
             this.homeDescription1.classList.toggle('left100')
-            this.homeDescription1.classList.toggle('display-none')
-            this.homeDescription1.classList.toggle('description-transition')
+            this.homeDescription1.classList.toggle('description-reset')
         }
         else {
-            this.homeDescription2.classList.toggle('width0')
-            this.homeDescription2.classList.toggle('opacity0')
+            this.homeDescription2.classList.toggle('description-fade')
             this.homeDescription2.classList.toggle('left100')
-            this.homeDescription1.classList.toggle('width0')
-            this.homeDescription1.classList.toggle('opacity0')
+            this.homeDescription1.classList.toggle('description-fade')
             await new Promise(r => setTimeout(r, 500))
-            this.homeDescription2.classList.toggle('display-none')
-            this.homeDescription2.classList.toggle('description-transition')
+            this.homeDescription2.classList.toggle('description-reset')
             this.homeDescription2.classList.toggle('left100')
-            this.homeDescription2.classList.toggle('display-none')
-            this.homeDescription2.classList.toggle('description-transition')
+            this.homeDescription2.classList.toggle('description-reset')
         }
     }
 }
