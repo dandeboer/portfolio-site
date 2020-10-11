@@ -39,23 +39,26 @@ body {
     .nav-bar-button:hover {font-size: 2.15rem;}
 }
 
-.home-background {
+.home-container {
+    display: inline-block;
     background-color: #2A2A2A;
-    margin-top: 125px;
+    margin-top: 65px;
     width: 100%;
-    height: 500px;
+    height: calc(100vh - 65px); /* make height have a minimum value */
 }
 
 .home-name{
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #FDFDFD;
     text-align: center;
 }
 
 .home-subtitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #FDFDFD;
     text-align: center;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 
 .home-description-container {
@@ -80,11 +83,6 @@ body {
     transition: opacity .35s linear, width .5s linear, left .5s linear;
 }
 
-.description-reset {
-    display: none;
-    transition: none;
-}
-
 .description-fade {
     width: 0;
     opacity: 0;
@@ -92,4 +90,10 @@ body {
 
 .left100 {
     left: 100%
+}
+
+.about-container {
+    display: inline-block;
+    width: 100%;
+    height: calc(100vh - 65px)
 }

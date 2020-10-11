@@ -4,8 +4,8 @@ class Animations {
         this.homeDescription1 = document.querySelector('#home-description-1')
         this.homeDescription2 = document.querySelector('#home-description-2')
         this.descriptionShown = 1
-        this.listOfDescriptions = ['am a hard worker', 'learn quickly', 'want you to check out my LinkedIn', 'am a kind and friendly person', 'work well in a team', 'love to do a good job', 'am a creative problem solver']
-        this.usedDescriptions = ['love cats', 'think analytically', 'have 11 flanel shirts']
+        this.listOfDescriptions = ['am a hard worker', 'want you to check out my LinkedIn', 'am a kind and friendly person', 'work well in a team', 'love to do a good job', 'am a creative problem solver']
+        this.usedDescriptions = ['love cats', 'learn quickly', 'have 11 flanel shirts']
     }
     async homeDescriptionText() {
         await new Promise(r => setTimeout(r, 3500))
@@ -45,23 +45,26 @@ class Animations {
             this.homeDescription1.classList.toggle('left100')
             this.homeDescription2.classList.toggle('description-fade')
             await new Promise(r => setTimeout(r, 500))
-            this.homeDescription1.classList.toggle('description-reset')
             this.homeDescription1.classList.toggle('left100')
-            this.homeDescription1.classList.toggle('description-reset')
         }
         else {
             this.homeDescription2.classList.toggle('description-fade')
             this.homeDescription2.classList.toggle('left100')
             this.homeDescription1.classList.toggle('description-fade')
             await new Promise(r => setTimeout(r, 500))
-            this.homeDescription2.classList.toggle('description-reset')
             this.homeDescription2.classList.toggle('left100')
-            this.homeDescription2.classList.toggle('description-reset')
         }
     }
 }
 
+
+
 new Animations().homeDescriptionText()
 
+function getViewportHeight() {
+    console.log(window.innerHeight)
+}
+
+getViewportHeight()
 
 // make it so that the part of the website you are on is underlined in the nav bar while you are in it
