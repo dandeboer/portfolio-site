@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+}
+
+body {
     background-color: #5F5F5F
 }
 
@@ -20,7 +23,6 @@
 
 .nav-bar-button {
     color: #F0F0F0;
-    background-color: #1A1A1B;
     font-size: 3rem;
     transition: font-size .6s, color .3s;
 }
@@ -34,35 +36,64 @@
 
 @media only screen and (max-width: 950px) {
     .nav-bar-button {font-size: 2.05rem;}
-    .nav-bar-button:hover{font-size: 2.15rem;}
+    .nav-bar-button:hover {font-size: 2.15rem;}
 }
 
-.home-background {
+.home-container {
+    display: inline-block;
     background-color: #2A2A2A;
-    margin-top: 125px;
+    margin-top: 65px;
     width: 100%;
-    height: 500px;
+    height: calc(100vh - 65px); /* make height have a minimum value */
 }
 
 .home-name{
-    /* color: #A8ABAC; */
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #FDFDFD;
-    background-color: #2A2A2A;
     text-align: center;
-
 }
 
 .home-subtitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #FDFDFD;
     text-align: center;
-    background-color: #2A2A2A;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+.home-description-container {
+    position: relative;
+    width: 100%;
+    height: 42px;
 }
 
 .home-description {
     font-size: 2.25rem;
     color: #FF475A;
     text-align: center;
-    background-color: #2A2A2A;
+    /* animations */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity .35s linear, width .5s linear, left .5s linear;
+}
+
+.description-fade {
+    width: 0;
+    opacity: 0;
+}
+
+.left100 {
+    left: 100%
+}
+
+.about-container {
+    display: inline-block;
+    width: 100%;
+    height: calc(100vh - 65px)
 }
