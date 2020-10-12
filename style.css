@@ -25,7 +25,7 @@ body {
 .nav-bar-button {
     color: #F0F0F0;
     font-size: 3rem;
-    transition: font-size .6s, color .3s, border .6s;
+    transition: font-size .6s, color .3s, border .5s;
     border-bottom: solid 2px transparent;
 }
 
