@@ -150,13 +150,13 @@ class Animations {
     etutorInfo() {
         this.projectAnimation()
         this.projectParagraph.innerText = 'eTutor is about connecting its users from around the globe and allowing them to tutor different languages to each other using video chat. This is a backend heavy project that uses Javascript, Python, Django, the Twilio API, and NodeJS. I was given two weeks to complete eTutor as my final project at Momentum Learning; it was a group project that was created remotely with my two partners Austin Smith and Asel Zhusupova. Last updated April 2020.'
-        this.projectLinks.innerHTML = "<a href='https://e-tutor-momentum.herokuapp.com/' class='project-link'>visit eTutor</a> <a href='https://github.com/momentum-Tutor/eTutor' class='project-link'>project GitHub</a>"
+        this.projectLinks.innerHTML = "<a href='https://e-tutor-momentum.herokuapp.com/' class='link'>visit eTutor</a> <a href='https://github.com/momentum-Tutor/eTutor' class='link'>project GitHub</a>"
     }
 
     portfolioInfo() {
         this.projectAnimation()
         this.projectParagraph.innerText = 'My portfolio was designed to be simple, but elegent. It is a completely front end project made with pure CSS and Javascript, meant to serve as a more visual and personal representation of my resume. Special care was taken to make my portfolio look good in mobile and various screen formats. Last updated October 2020'
-        this.projectLinks.innerHTML = "<a href='https://github.com/dandeboer/portfolio-site' class='project-link'>project GitHub</a>"
+        this.projectLinks.innerHTML = "<a href='https://github.com/dandeboer/portfolio-site' class='link'>project GitHub</a>"
     }
 
     projectAnimation() {

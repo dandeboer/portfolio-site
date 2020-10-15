@@ -23,7 +23,7 @@ body {
 }
 
 .nav-bar-button {
-    color: #F0F0F0;
+    color: #FDFDFD;
     font-size: 3rem;
     transition: font-size .6s, color .3s, border .5s;
     border-bottom: solid 2px transparent;
@@ -233,7 +233,7 @@ body {
     text-align: center;
 }
 
-.project-link {
+.link {
     color: #E11470;
     font-size: 2rem;
     margin: 5px;
@@ -243,4 +243,14 @@ body {
     display: inline-block;
     width: 100%;
     height: calc(100vh - 65px);
+}
+
+.contact-paragraph {
+    margin-top: 50px;
+    margin-bottom: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #FDFDFD;
+    text-align: center;
 }
