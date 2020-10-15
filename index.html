@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel DeBoer</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"></style>
+    <link rel="stylesheet" href="style.css">
+    </style>
     <script defer src="index.js"></script>
 </head>
+
 <body>
+
     <nav class='nav-bar'>
-            <span class='nav-bar-button' id='home-button'>Home</span>
-            <span class='nav-bar-button' id=about-button>About Me</span>
-            <span class='nav-bar-button' id='projects-button'>Projects</span>
-            <span class='nav-bar-button' id='contact-button'>Contact</span>
+        <span class='nav-bar-button' id='home-button'>Home</span>
+        <span class='nav-bar-button' id=about-button>About Me</span>
+        <span class='nav-bar-button' id='projects-button'>Projects</span>
+        <span class='nav-bar-button' id='contact-button'>Contact</span>
     </nav>
 
     <section class='home-container' id='home-container'>
         <h1 class='home-subtitle'>Hello, my name is</h2>
-        <h1 class='home-name'>Daniel DeBoer,</h1>
-        <h1 class='home-subtitle'>and I</h2>
-        <div class='home-description-container' id='home-description-container'>
-            <h2 class='home-description' id='home-description-1'>am a Full Stack Web Developer</h3>
-            <h2 class='home-description description-fade' id='home-description-2'>test description</h3>
-        </div>
-        <!-- <a href="https://www.vecteezy.com/free-vector/red-pattern">Red Pattern Vectors by Vecteezy</a> -->
+            <h1 class='home-name'>Daniel DeBoer,</h1>
+            <h1 class='home-subtitle'>and I</h2>
+                <div class='home-description-container' id='home-description-container'>
+                    <h2 class='home-description' id='home-description-1'>am a Full Stack Web Developer</h2>
+                    <h2 class='home-description description-fade' id='home-description-2'></h2>
+                </div>
     </section>
 
     <section class='about-container'>
         <h2 class='section-header'>A little bit about me</h2>
-        <p>I am a young aspiring Web Developer living in the Raleigh NC area. In 2020 I graduated from the Momentum Coding bootcamp.
-            Before Momentum I knew very little about programming, but over the course of 12 hard weeks 
-            I developed a love for programming and learned the skills needed to be a job ready Junior Software 
-            Engineer. I am skilled in both the front end and back end of web development and use 
-            Javascript, Python, and Django. I am currently looking for work. 
-        
+        <p class='about-paragraph'>I am a young aspiring Web Developer living in the Raleigh NC area. In 2020 I
+            graduated from the Momentum Coding bootcamp.
+            Before Momentum I knew very little about programming, but over the course of 12 hard weeks
+            I developed a love for programming and learned the skills needed to be a job ready Junior Software
+            Engineer. I am skilled in both the front end and back end of web development and use
+            Javascript, Python, and Django. I am currently looking for work.
         </p>
+
+        <h3 class='skills-subheader'>My Skills</h3>
+        <ul class='skills-container'>
+            <li class='skills'>HTML</li>
+            <li class='skills'>CSS</li>
+            <li class='skills'>Javascript</li>
+            <li class='skills'>Python</li>
+            <li class='skills'>Django</li>
+            <li class='skills'>MySQL</li>
+            <li class='skills'>Command Line</li>
+            <li class='skills'>Object Oriented Programming</li>
+            <li class='skills'>Git/Github</li>
+        </ul>
     </section>
 
     <section class='projects-container'>
         <h2 class='section-header'>My projects</h2>
+
+
+
+        <div class='project-list-container'>
+
+            <div class='project-list-subcontainer' id='project-list-subcontainer'>
+
+                <div class='project-front'>
+                    <div class='project-list'>
+                        <img src='resources/Screen Shot 2020-10-14 at 2.10.55 AM.png' class='project-thumbnail'
+                            id='etutor-thumbnail'>
+                        <img src='resources/Screen Shot 2020-10-14 at 2.24.58 AM.png' class='project-thumbnail'
+                            id='portfolio-thumbnail'>
+                    </div>
+                </div>
+
+                <div class='project-back'>
+                    <button type='button' class='close-project' id='close-project'>CLOSE</button>
+                    <p class='project-paragraph' id='project-paragraph'></p>
+                    <p class='text-align-center' id='project-links'></p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section class='contact-container'>
         <h2 class='section-header'>Contact me</h2>
+        <p class='contact-paragraph'>I'd love to hear from you about work opportunities, questions, constructive feedback, or if you just want to say hi.</p>
+        <p class='text-align-center'>
+            <a href="https://www.linkedin.com/in/daniel-deboer-8103911a2/" class='link'>LinkedIn</a>
+            <a href='mailto: ddeboer926@gmail.com' class='link'>Email Me</a>
+            <a href='https://github.com/dandeboer' class='link'>GitHub</a>
+        </p>
     </section>
 
 </body>
+
 </html>

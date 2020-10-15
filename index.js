@@ -16,6 +16,12 @@ class Animations {
         this.sectionHeight = this.homeContainer.offsetHeight
         this.currentSection
         this.yTracking
+        this.etutorThumbnail = document.querySelector('#etutor-thumbnail')
+        this.portfolioThumbnail = document.querySelector('#portfolio-thumbnail')
+        this.projectListSubcontainer = document.querySelector('#project-list-subcontainer')
+        this.closeProject = document.querySelector('#close-project')
+        this.projectParagraph = document.querySelector('#project-paragraph')
+        this.projectLinks = document.querySelector('#project-links')
     }
 
     setup() {
@@ -27,6 +33,9 @@ class Animations {
         this.aboutButton.addEventListener('click', this.aboutScroll.bind(this))
         this.projectsButton.addEventListener('click', this.projectsScroll.bind(this))
         this.contactButton.addEventListener('click', this.contactScroll.bind(this))
+        this.etutorThumbnail.addEventListener('click', this.etutorInfo.bind(this))
+        this.portfolioThumbnail.addEventListener('click', this.portfolioInfo.bind(this))
+        this.closeProject.addEventListener('click', this.projectAnimation.bind(this))
     }
 
     async homeDescriptionText() {
@@ -127,15 +136,31 @@ class Animations {
     }
 
     aboutScroll() {
-        window.scrollTo({top: this.sectionHeight, left: 0, behavior: 'smooth'})
+        window.scrollTo({ top: this.sectionHeight, left: 0, behavior: 'smooth' })
     }
 
     projectsScroll() {
-        window.scrollTo({top: (2 * this.sectionHeight), left: 0, behavior: 'smooth'})
+        window.scrollTo({ top: (2 * this.sectionHeight), left: 0, behavior: 'smooth' })
     }
 
     contactScroll() {
-        window.scrollTo({top: (3 * this.sectionHeight), left: 0, behavior: 'smooth'})
+        window.scrollTo({ top: (3 * this.sectionHeight), left: 0, behavior: 'smooth' })
+    }
+
+    etutorInfo() {
+        this.projectAnimation()
+        this.projectParagraph.innerText = 'eTutor is about connecting its users from around the globe and allowing them to tutor different languages to each other using video chat. This is a backend heavy project that uses Javascript, Python, Django, the Twilio API, and NodeJS. I was given two weeks to complete eTutor as my final project at Momentum Learning; it was a group project that was created remotely with my two partners Austin Smith and Asel Zhusupova. Last updated April 2020.'
+        this.projectLinks.innerHTML = "<a href='https://e-tutor-momentum.herokuapp.com/' class='link'>visit eTutor</a> <a href='https://github.com/momentum-Tutor/eTutor' class='link'>project GitHub</a>"
+    }
+
+    portfolioInfo() {
+        this.projectAnimation()
+        this.projectParagraph.innerText = 'My portfolio was designed to be simple, but elegent. It is a completely front end project made with pure CSS and Javascript, meant to serve as a more visual and personal representation of my resume. Special care was taken to make my portfolio look good in mobile and various screen formats. Last updated October 2020'
+        this.projectLinks.innerHTML = "<a href='https://github.com/dandeboer/portfolio-site' class='link'>project GitHub</a>"
+    }
+
+    projectAnimation() {
+        this.projectListSubcontainer.classList.toggle('transform-rotateY-180deg')
     }
 }
 
