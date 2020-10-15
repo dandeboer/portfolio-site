@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #5F5F5F
+    background-color: #141414;
 }
 
 .nav-bar {
@@ -98,16 +98,52 @@ body {
     left: 100%
 }
 
-.about-container {
-    display: inline-block;
-    width: 100%;
-    height: calc(100vh - 65px)
-}
-
 .section-header {
     font-size: 3rem;
     color: #FF475A;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-container {
+    display: inline-block;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+.about-paragraph {
+    color: #FDFDFD;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skills-subheader {
+    color: #FF475A;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: calc(100vh - 525px);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skills {
+    list-style-type: none;
+    color: #FDFDFD;
+    display: inline-block;
+    border: 1px solid #FF475A;
+    background-color: #1A1A1B;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .projects-container {
@@ -115,6 +151,92 @@ body {
     background-color: #2A2A2A;
     width: 100%;
     height: calc(100vh - 65px);
+}
+
+.project-list-container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.project-list-subcontainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.4s linear;
+}
+
+.transform-rotateY-180deg {
+    transform: rotateY(180deg);
+}
+
+.project-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-thumbnail {
+    width: 40%;
+    margin-top: 30px;
+    border: 2px solid #FDFDFD;
+    border-radius: 5px;
+}
+
+.project-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #1A1A1B;
+    transform: rotateY(180deg);
+    overflow-y: auto;
+    border: 2px solid #FDFDFD;
+    border-radius: 10px;
+}
+
+.close-project {
+    border: 2px solid #FF475A;
+    color: #FDFDFD;
+    background-color: #1A1A1B;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    float: right;
+    font-size: 1.5rem;
+    transition: background-color .15s;
+}
+
+.close-project:hover {
+    background-color: #FF475A;
+}
+
+.project-paragraph {
+    color: #FDFDFD;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.project-link {
+    color: #E11470;
+    font-size: 2rem;
+    margin: 5px;
 }
 
 .contact-container {
