@@ -40,11 +40,6 @@ body {
     border-color: #FFFFFF;
 }
 
-@media only screen and (max-width: 950px) {
-    .nav-bar-button {font-size: 2.05rem;}
-    .nav-bar-button:hover {font-size: 2.15rem;}
-}
-
 .home-container {
     display: inline-block;
     background-color: #2A2A2A;
@@ -54,27 +49,31 @@ body {
 }
 
 .home-name{
-    font-size: 4.5rem;
+    font-size: 5rem;
     color: #FDFDFD;
     text-align: center;
 }
 
 .home-subtitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #FDFDFD;
     text-align: center;
     margin-top:15px;
     margin-bottom: 15px;
 }
 
+.home-margin-top {
+    margin-top: 50px;
+}
+
 .home-description-container {
     position: relative;
     width: 100%;
-    height: 46px;
+    height: 60px;
 }
 
 .home-description {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #FF475A;
     text-align: center;
     /* animations */
@@ -123,7 +122,7 @@ body {
     color: #FF475A;
     font-size: 2rem;
     text-align: center;
-    margin-top: calc(100vh - 525px);
+    margin-top: calc(100vh - 600px);
 }
 
 .skills-container {
@@ -186,7 +185,7 @@ body {
 }
 
 .project-thumbnail {
-    width: 40%;
+    width: 350px;
     margin-top: 30px;
     border: 2px solid #FDFDFD;
     border-radius: 5px;
@@ -253,4 +252,66 @@ body {
     font-size: 2rem;
     color: #FDFDFD;
     text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .nav-bar-button {font-size: 2.05rem;}
+    .nav-bar-button:hover {font-size: 2.15rem;}
+    .project-thumbnail {width: 300px;}
+    .home-name {font-size: 4.5rem;}
+    .home-subtitle {font-size: 2.5rem;}
+    .home-description {font-size: 2.5rem;}
+    .about-paragraph {font-size: 1.75rem;}
+    .project-paragraph {font-size: 1.75rem;}
+    .contact-paragraph {font-size: 1.75rem;}
+}
+
+@media only screen and (max-width: 670px) {
+    .nav-bar-button {font-size: 1.6rem;}
+    .nav-bar-button:hover {font-size: 1.7rem;}
+    .home-name {font-size: 3rem;}
+    .home-subtitle {
+        font-size: 1.6rem; 
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .home-description {font-size: 1.6rem;}
+    .section-header {font-size: 2rem;}
+    .about-paragraph {font-size: 1.3rem;}
+    .project-paragraph {font-size: 1.3rem;}
+    .contact-paragraph {font-size: 1.5rem;}
+    .project-thumbnail {width: 250px;}
+    .close-project {font-size: 1rem;}
+    .link {font-size: 1.6rem;}
+}
+
+@media only screen and (max-width: 440px) {
+    .nav-bar-button {font-size: 1.1rem}
+    .nav-bar-button:hover {font-size: 1.3rem}
+    .home-name {font-size: 2rem;}
+    .home-subtitle {font-size: 1.2rem;}
+    .home-description {font-size: 1.2rem}
+    .about-paragraph {font-size: 1rem;}
+    .project-paragraph {font-size: 1rem;}
+    .contact-paragraph {font-size: 1rem;}
+    .link {font-size: 1.2rem;}
+}
+
+@media only screen and (max-height: 600px) {
+    .project-thumbnail {width: 240px;}
+    .about-paragraph {font-size: max(1.5rem;)}
+    .skills-subheader {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+    .skills {
+        font-size: .8rem;
+        margin: 2px;
+        padding: 2px;
+    }
+    .contact-paragraph {margin-bottom: 150px;}
+    .home-container {height: 535px;}
+    .about-container {height: 535px;}
+    .projects-container {height: 535px;}
+    .contact-container {height: 535px;}
 }
