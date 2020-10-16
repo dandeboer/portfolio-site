@@ -155,7 +155,7 @@ class Animations {
 
     portfolioInfo() {
         this.projectAnimation()
-        this.projectParagraph.innerText = 'My portfolio was designed to be simple, but elegent. It is a completely front end project made with pure CSS and Javascript, meant to serve as a more visual and personal representation of my resume. Special care was taken to make my portfolio look good in mobile and various screen formats. Last updated October 2020'
+        this.projectParagraph.innerText = 'My portfolio was designed to be simple, but elegent. It is a completely front end project made with pure CSS and Javascript, meant to serve as a more visual and personal representation of my resume. Special care was taken to make my portfolio responsive and mobile friendly. Last updated October 2020'
         this.projectLinks.innerHTML = "<a href='https://github.com/dandeboer/portfolio-site' class='link'>project GitHub</a>"
     }
 
